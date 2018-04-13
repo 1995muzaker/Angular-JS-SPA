@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>
+    <script src="js/app.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="header-wrapper" ng-init="myVar = 'imgs/logo.png'" ng-controller="HeaderCtrl">
+      <span class="logo float-left"><img ng-src="{{myVar}}" class="img-fluid logo-1"></span>
+      <span class="tagline float-left">{{appDetails.tagline}}</span>
+      <div class="nav-wrapper float-left">
+        <ul class="nav nav-pills">
+          <li class="nav-link active"><a href="#/books">Books</a></li>
+          <li><a href="#/kart">Kart</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div ng-view class="container"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+        <hr>
+          <div class="col-sm-6">
+            <p class="f-1">&copy Smart Online store All Rights Reserved</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="f-2"><a href="https://www.linkedin.com/in/muzaker-web-developer" target="blank">Made with <i class="fa fa-heart"></i> by Shaikh Muzaker</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
